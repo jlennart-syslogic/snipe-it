@@ -35,4 +35,8 @@ return array(
     'username_note' 		=> '(This is used for Active Directory binding only, not for login.)',
     'cloneuser'             => 'Clone User',
     'viewusers' 			=> 'View Users',
+    'grade'                 => 'Grade',
+    'homeroom'              => 'Homeroom',
+    'birthdate'             => 'Birthdate',
+    'graduation_year'       => 'Graduation Year',
 );

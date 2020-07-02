@@ -171,6 +171,38 @@ class UserPresenter extends Presenter
                 "formatter" => "usersLinkObjFormatter"
             ],
             [
+                "field" => "grade",
+                "searchable" => true,
+                "sortable" => true,
+                "title" => trans('admin/users/table.grade'),
+                "visible" => true,
+                "formatter" => "usersLinkObjFormatter"
+            ],
+            [
+                "field" => "homeroom",
+                "searchable" => true,
+                "sortable" => true,
+                "title" => trans('admin/users/table.homeroom'),
+                "visible" => true,
+                "formatter" => "usersLinkObjFormatter"
+            ],
+            [
+                "field" => "birthdate",
+                "searchable" => true,
+                "sortable" => true,
+                "title" => trans('admin/users/table.birthdate'),
+                "visible" => true,
+                "formatter" => "usersLinkObjFormatter"
+            ],
+            [
+                "field" => "graduation_year",
+                "searchable" => true,
+                "sortable" => true,
+                "title" => trans('admin/users/table.graduation_year'),
+                "visible" => true,
+                "formatter" => "usersLinkObjFormatter"
+            ],
+            [
                 'field' => 'assets_count',
                 'searchable' => false,
                 'sortable' => true,

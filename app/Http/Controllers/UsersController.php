@@ -128,7 +128,10 @@ class UsersController extends Controller
         $user->state = $request->input('state', null);
         $user->country = $request->input('country', null);
         $user->zip = $request->input('zip', null);
-
+        $user->grade = $request->input('grade', null);
+        $user->homeroom = $request->input('homeroom', null);
+        $user->birthdate = $request->input('birthdate', null);
+        $user->graduation_year = $request->input('graduation_year', null);
         // Strip out the superuser permission if the user isn't a superadmin
         $permissions_array = $request->input('permission');
 
@@ -290,6 +293,10 @@ class UsersController extends Controller
         $user->country = $request->input('country', null);
         $user->activated = $request->input('activated', 0);
         $user->zip = $request->input('zip', null);
+        $user->grade = $request->input('grade',null);
+        $user->homeroom = $request->input('homeroom', null);
+        $user->birthdate = $request->input('birthdate', null);
+        $user->graduation_year = $request->input('graduation_year', null);
 
 
         // Update the location of any assets checked out to this user
@@ -922,6 +929,10 @@ class UsersController extends Controller
                     trans('admin/users/table.email'),
                     trans('admin/users/table.manager'),
                     trans('admin/users/table.location'),
+                    trans('admin/users/table.grade'),
+                    trans('admin/users/table.homeroom'),
+                    trans('admin/users/table.birthdate'),
+                    trans('admin/users/table.graduation_year'),
                     trans('general.department'),
                     trans('general.assets'),
                     trans('general.licenses'),
@@ -953,6 +964,10 @@ class UsersController extends Controller
                         $user->email,
                         ($user->manager) ? $user->manager->present()->fullName() : '',
                         ($user->userloc) ? $user->userloc->name : '',
+                        $user->grade,
+                        $user->homeroom,
+                        $user->birthdate,
+                        $user->graduation_year,
                         ($user->department) ? $user->department->name : '',
                         $user->assets->count(),
                         $user->licenses->count(),

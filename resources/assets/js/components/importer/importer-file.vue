@@ -168,7 +168,11 @@
                         {id: 'phone_number', text: 'Phone Number' },
                         {id: 'manager_first_name', text: 'Manager First Name' },
                         {id: 'manager_last_name', text: 'Manager Last Name' },
-                        {id: 'activated', text: 'Activated' },
+                        {id: 'activated', text: 'Activated'},
+                        { id: 'grade', text: 'Grade' },
+                        { id: 'homeroom', text: 'Homeroom' },
+                        { id: 'birthdate', text: 'Birthdate' },
+                        { id: 'graduation_year', text: 'Graduation Year' },
 
                     ],
                     customFields: this.customFields,

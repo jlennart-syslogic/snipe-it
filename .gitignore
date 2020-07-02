@@ -51,3 +51,11 @@ tests/_support/_generated/*
 
 *.cache
 /public/storage
+/.vs/snipe-it/config/applicationhost.config
+/.vs/snipe-it/v16/.suo
+/.vs/VSWorkspaceState.json
+/.vs/tasks.vs.json
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/Composer-Setup.exe
+/public/.rnd

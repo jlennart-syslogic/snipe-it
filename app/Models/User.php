@@ -51,6 +51,10 @@ class User extends SnipeModel implements AuthenticatableContract, CanResetPasswo
         'state',
         'username',
         'zip',
+        'grade',
+        'homeroom',
+        'birthdate',
+        'graduation_year'
     ];
 
     protected $casts = [
@@ -69,7 +73,9 @@ class User extends SnipeModel implements AuthenticatableContract, CanResetPasswo
         'email'                   => 'email|nullable',
         'password'                => 'required|min:6',
         'locale'                  => 'max:10|nullable',
-        'website'           => 'url|nullable',
+        'website'                 => 'url|nullable',
+        'graduation_year'         => 'integer|min:1900|max:2200|nullable',
+        'birthdate'               => 'date|nullable',
     ];
 
     use Searchable;

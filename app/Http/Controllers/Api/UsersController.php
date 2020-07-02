@@ -43,6 +43,7 @@ class UsersController extends Controller
             'users.email',
             'users.employee_num',
             'users.first_name',
+            'users.grade',
             'users.id',
             'users.jobtitle',
             'users.last_login',
@@ -114,7 +115,7 @@ class UsersController extends Controller
             default:
                 $allowed_columns =
                     [
-                        'last_name','first_name','email','jobtitle','username','employee_num',
+                        'last_name','first_name','email','jobtitle','grade','username','employee_num',
                         'assets','accessories', 'consumables','licenses','groups','activated','created_at',
                         'two_factor_enrolled','two_factor_optin','last_login', 'assets_count', 'licenses_count',
                         'consumables_count', 'accessories_count', 'phone', 'address', 'city', 'state',

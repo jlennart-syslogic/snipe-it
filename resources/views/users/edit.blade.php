@@ -329,7 +329,64 @@
                       </div>
                   </div>
 
+                  <!-- Grade -->
+                <div class="form-group {{ $errors->has('grade') ? 'has-error' : '' }}">
+                  <label class="col-md-3 control-label" for="grade">{{ trans('admin/users/table.grade') }}</label>
+                  <div class="col-md-4">
+                    <input
+                      class="form-control"
+                      type="text"
+                      aria-label="grade"
+                      name="grade"
+                      id="grade"
+                      value="{{ Input::old('grade', $user->grade) }}"
+                    />
+                    {!! $errors->first('grade', '<span class="alert-msg" aria-hidden="true">:message</span>') !!}
+                  </div>
+                </div>
 
+                <!-- Homeroom -->
+                <div class="form-group {{ $errors->has('homeroom') ? 'has-error' : '' }}">
+                  <label class="col-md-3 control-label" for="homeroom">{{ trans('admin/users/table.homeroom') }}</label>
+                  <div class="col-md-4">
+                    <input
+                      class="form-control"
+                      type="text"
+                      aria-label="homeroom"
+                      name="homeroom"
+                      id="homeroom"
+                      value="{{ Input::old('homeroom', $user->homeroom) }}"
+                    />
+                    {!! $errors->first('homeroom', '<span class="alert-msg" aria-hidden="true">:message</span>') !!}
+                  </div>
+                </div>
+
+                <!-- Birthdate -->
+                <div class="form-group {{ $errors->has('birthdate') ? 'has-error' : '' }}">
+                  <label class="col-md-3 control-label" for="homeroom">{{ trans('admin/users/table.birthdate') }}</label>
+                 
+                    <div class="input-group date col-md-7" data-provide="datepicker" data-date-format="yyyy-mm-dd" data-date-end-date="0d">
+                      <input type="text" class="form-control" placeholder="{{ trans('general.select_date') }}" 
+                      name="birthdate" id="birthdate" value="{{ Input::old('birthdate', $user->birthdate) }}">
+                      <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                  </div>                  
+                </div>
+
+                 <!-- Graduation Year -->
+                <div class="form-group {{ $errors->has('graduation_year') ? 'has-error' : '' }}">
+                  <label class="col-md-3 control-label" for="graduation_year">{{ trans('admin/users/table.graduation_year') }}</label>
+                  <div class="col-md-4">
+                    <input
+                      class="form-control"
+                      type="text"
+                      aria-label="graduation_year"
+                      name="graduation_year"
+                      id="graduation_year"
+                      value="{{ Input::old('graduation_year', $user->graduation_year) }}"
+                    />
+                    {!! $errors->first('graduation_year', '<span class="alert-msg" aria-hidden="true">:message</span>') !!}
+                  </div>
+                </div>
 
                   <!-- Activation Status -->
                   <div class="form-group {{ $errors->has('activated') ? 'has-error' : '' }}">
