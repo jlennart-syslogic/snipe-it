@@ -44,6 +44,9 @@ class UsersController extends Controller
             'users.employee_num',
             'users.first_name',
             'users.grade',
+            'users.graduation_year',
+            'users.birthdate',
+            'users.homeroom',
             'users.id',
             'users.jobtitle',
             'users.last_login',
@@ -119,7 +122,7 @@ class UsersController extends Controller
                         'assets','accessories', 'consumables','licenses','groups','activated','created_at',
                         'two_factor_enrolled','two_factor_optin','last_login', 'assets_count', 'licenses_count',
                         'consumables_count', 'accessories_count', 'phone', 'address', 'city', 'state',
-                        'country', 'zip', 'id'
+                        'country', 'zip', 'id','homeroom','birthdate','graduation_year'
                     ];
 
                 $sort = in_array($request->get('sort'), $allowed_columns) ? $request->get('sort') : 'first_name';

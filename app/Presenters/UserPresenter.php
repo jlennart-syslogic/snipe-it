@@ -170,13 +170,14 @@ class UserPresenter extends Presenter
                 "visible" => true,
                 "formatter" => "usersLinkObjFormatter"
             ],
+            
             [
                 "field" => "grade",
                 "searchable" => true,
                 "sortable" => true,
                 "title" => trans('admin/users/table.grade'),
                 "visible" => true,
-                "formatter" => "usersLinkObjFormatter"
+                
             ],
             [
                 "field" => "homeroom",
@@ -184,7 +185,6 @@ class UserPresenter extends Presenter
                 "sortable" => true,
                 "title" => trans('admin/users/table.homeroom'),
                 "visible" => true,
-                "formatter" => "usersLinkObjFormatter"
             ],
             [
                 "field" => "birthdate",
@@ -192,15 +192,14 @@ class UserPresenter extends Presenter
                 "sortable" => true,
                 "title" => trans('admin/users/table.birthdate'),
                 "visible" => true,
-                "formatter" => "usersLinkObjFormatter"
+                
             ],
             [
                 "field" => "graduation_year",
                 "searchable" => true,
                 "sortable" => true,
                 "title" => trans('admin/users/table.graduation_year'),
-                "visible" => true,
-                "formatter" => "usersLinkObjFormatter"
+                "visible" => true,                
             ],
             [
                 'field' => 'assets_count',

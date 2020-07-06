@@ -34,6 +34,10 @@ class UsersTransformer
                     'name'=> e($user->manager->username)
                 ]  : null,
                 'jobtitle' => ($user->jobtitle) ? e($user->jobtitle) : null,
+                'grade' => ($user->grade) ? e($user->grade) : null,
+                'homeroom' => ($user->homeroom) ? e($user->homeroom) : null,
+                'birthdate' => ($user->birthdate) ? e($user->birthdate) : null,
+                'graduation_year' => ($user->graduation_year) ? e($user->graduation_year) : null,
                 'phone' => ($user->phone) ? e($user->phone) : null,
                 'website' => ($user->website) ? e($user->website) : null,
                 'address' => ($user->address) ? e($user->address) : null,

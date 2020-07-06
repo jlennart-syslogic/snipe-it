@@ -93,7 +93,11 @@ class User extends SnipeModel implements AuthenticatableContract, CanResetPasswo
         'notes',
         'phone',
         'jobtitle',
-        'employee_num'
+        'employee_num',
+        'grade',
+        'homeroom',
+        'birthdate',
+        'graduation_year',
     ];
 
     /**
